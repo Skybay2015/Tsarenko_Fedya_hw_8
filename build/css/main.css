@@ -1,0 +1,140 @@
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 50px 0 0 0; }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.header-logo {
+  color: #fff;
+  font-size: 25px; }
+  @media (max-width: 491px) {
+    .header-logo {
+      margin: 0 auto 20px; } }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 491px) {
+    .nav-container {
+      margin: 0 auto; } }
+
+.nav-items {
+  margin-right: 30px;
+  color: #fff;
+  text-decoration: none; }
+  @media (max-width: 360px) {
+    .nav-items {
+      margin-right: 20px; } }
+  .nav-items:last-child {
+    margin-right: 0; }
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 970px; }
+
+.home {
+  padding: 210px 0 125px;
+  text-align: center;
+  background: url("../img/home-bg.png") no-repeat center;
+  background-size: cover; }
+
+.home-paragraph {
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300; }
+
+.home-title {
+  margin-bottom: 80px;
+  color: #fff;
+  font-size: 66px;
+  text-transform: uppercase; }
+
+.home-btn {
+  height: 65px;
+  padding: 0 68px;
+  border: 3px solid #fff;
+  background: transparent;
+  font-size: 23px;
+  color: #fff; }
+  .home-btn:hover {
+    color: #000;
+    background: #fff;
+    transition: 0.3s ease; }
+
+.services {
+  padding: 100px 0; }
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px; }
+
+.services-item {
+  max-width: 552px; }
+  .services-item p {
+    color: #777777;
+    font-size: 18px;
+    line-height: 24px; }
+
+.services-h2 {
+  margin-bottom: 35px;
+  color: #000;
+  font-size: 60px; }
+
+.end-of-text {
+  font-weight: bold; }
+
+.services-paragraph-1 {
+  margin-bottom: 45px; }
+
+.flow-tree {
+  height: 221px;
+  width: 221px;
+  background: url("../img/Flow_Tree-Icon.png") center no-repeat;
+  background-size: cover; }
+
+.users-icon {
+  height: 197px;
+  width: 272px;
+  background: url("../img/Users-Icon.png") center no-repeat;
+  background-size: cover; }
+
+.services-branding {
+  padding: 100px 0 0 0;
+  background-color: #fafafa; }
+
+.skills-main-container {
+  padding-top: 66px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.skills-container {
+  display: flex;
+  margin-top: 44px;
+  flex-basis: 40%; }
+  @media (max-width: 660px) {
+    .skills-container {
+      flex-basis: 100%; } }
+
+.skills-img {
+  margin-right: 20px; }
+
+.skills-title {
+  font-size: 22px;
+  margin-bottom: 10px; }
+
+.skills-paragraph {
+  font-size: 18px;
+  color: #777777; }
