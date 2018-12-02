@@ -80,6 +80,9 @@ header {
   flex-wrap: wrap;
   padding-bottom: 100px; }
 
+.reverse {
+  flex-direction: row-reverse; }
+
 .services-item {
   max-width: 552px; }
   .services-item p {
@@ -87,16 +90,23 @@ header {
     font-size: 18px;
     line-height: 24px; }
 
-.services-h2 {
-  margin-bottom: 35px;
+.title {
   color: #000;
   font-size: 60px; }
+  @media (max-width: 320px) {
+    .title {
+      font-size: 55px; } }
 
 .end-of-text {
   font-weight: bold; }
 
 .services-paragraph-1 {
+  margin-top: 35px;
   margin-bottom: 45px; }
+
+@media (max-width: 800px) {
+  .services-item:first-child {
+    margin-bottom: 40px; } }
 
 .flow-tree {
   height: 221px;
@@ -138,3 +148,76 @@ header {
 .skills-paragraph {
   font-size: 18px;
   color: #777777; }
+
+.clients {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #fafafa; }
+
+.under-title-paragraph {
+  margin-top: 18px;
+  color: #777777;
+  font-size: 22px; }
+
+.clients-main-container {
+  display: flex;
+  flex-direction: column; }
+
+.clients-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px; }
+
+.clients-item {
+  padding: 41px 90px;
+  flex-basis: 50%;
+  background-color: #fff;
+  border: 1px solid #e8e8e8; }
+  @media (max-width: 930px) {
+    .clients-item {
+      flex-basis: 100%; } }
+  @media (max-width: 600px) {
+    .clients-item {
+      padding: 20px; } }
+
+.clients-img {
+  margin: 0 17px; }
+  @media (max-width: 930px) {
+    .clients-img {
+      margin: 0 auto; } }
+
+.cite {
+  color: #777777;
+  font-size: 26px;
+  margin-bottom: 13px;
+  text-align: left; }
+
+.author {
+  color: #7690c5;
+  font-size: 20px;
+  text-align: left; }
+
+.logos {
+  padding: 30px 0 60px; }
+
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap; }
+
+.logos-item {
+  margin-top: 30px; }
+  @media (max-width: 768px) {
+    .logos-item {
+      flex-basis: 50%; } }
+  @media (max-width: 425px) {
+    .logos-item {
+      flex-basis: 100%;
+      margin-top: 60px; } }
+
+.logos-img {
+  display: block;
+  margin: 0 auto; }

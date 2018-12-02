@@ -10,6 +10,9 @@
   flex-wrap: wrap
   padding-bottom: 100px
 
+.reverse
+  flex-direction: row-reverse
+
 .services-item
   max-width: 552px
   p
@@ -17,16 +20,22 @@
     font-size: 18px
     line-height: 24px
 
-.services-h2
-  margin-bottom: 35px
+.title
   color: #000
   font-size: 60px
+  @media (max-width: 320px)
+    font-size: 55px
 
 .end-of-text
   font-weight: bold
 
 .services-paragraph-1
+  margin-top: 35px
   margin-bottom: 45px
+
+.services-item:first-child
+  @media (max-width: 800px)
+    margin-bottom: 40px
 
 .flow-tree
   height: 221px
