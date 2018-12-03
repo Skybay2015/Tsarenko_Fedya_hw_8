@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Brandon Grotesque Thin';
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Thin.eot');
+    src: url('../fonts/Brandon Grotesque/BrandonGrotesque-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Brandon Grotesque/BrandonGrotesque-Thin.woff') format('woff'),
+    url('../fonts/Brandon Grotesque/BrandonGrotesque-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

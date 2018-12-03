@@ -7,7 +7,7 @@
 
 .under-title-paragraph
   margin-top: 18px
-  color: #777777
+  color: $main-paragraph-color
   font-size: 22px
   
 .clients-main-container
@@ -22,6 +22,7 @@
   margin-top: 40px
 
 .clients-item
+  position: relative
   padding: 41px 90px
   flex-basis: 50%
   background-color: #fff
@@ -31,10 +32,71 @@
   @media (max-width: 600px)
     padding: 20px
 
+.left
+  &::before, &::after
+    content: ''
+    border: solid transparent
+    position: absolute
+    left: -15px
+    margin-left: -18px
+    top: 40%
+    width: 0
+    @media (max-width: 930px)
+      left: 50%
+      top: -32px
+
+.left::before
+  border-right-color: #e8e8e8
+  border-width: 16px
+  @media (max-width: 930px)
+    border-right-color: transparent
+    border-bottom-color: #e8e8e8
+
+.left::after
+  border-right-color: #fff
+  border-width: 16px
+  margin-left: -16px
+  @media (max-width: 930px)
+    border-right-color: transparent
+    border-bottom-color: #fff
+    border-width: 18px
+    margin-left: -20px
+
+.right
+  &::before, &::after
+    content: ''
+    border: solid transparent
+    position: absolute
+    right: -32px
+    margin-left: -18px
+    top: 40%
+    width: 0
+    @media (max-width: 930px)
+      left: 50%
+      top: -32px
+
+.right::before
+  border-left-color: #e8e8e8
+  border-width: 16px
+  @media (max-width: 930px)
+    border-left-color: transparent
+    border-bottom-color: #e8e8e8
+
+.right::after
+  border-left-color: #fff
+  border-width: 17px
+  margin-left: -16px
+  margin-top: -1px
+  @media (max-width: 930px)
+    border-left-color: transparent
+    border-bottom-color: #fff
+    border-width: 18px
+    margin-left: -20px
+
 .clients-img
   margin: 0 17px
   @media (max-width: 930px)
-    margin: 0 auto
+    margin: 0 auto 10px
 
 .cite
   color: #777777

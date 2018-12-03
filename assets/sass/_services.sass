@@ -4,8 +4,7 @@
   padding: 100px 0
 
 .services-container
-  display: flex
-  justify-content: space-around
+  +flex-content(space-around)
   align-items: center
   flex-wrap: wrap
   padding-bottom: 100px
@@ -16,15 +15,17 @@
 .services-item
   max-width: 552px
   p
-    color: #777777
+    color: $main-paragraph-color
     font-size: 18px
     line-height: 24px
 
 .title
-  color: #000
+  color: $main-title-color
   font-size: 60px
-  @media (max-width: 320px)
+  @media (max-width: 800px)
+    text-align: center
     font-size: 55px
+
 
 .end-of-text
   font-weight: bold
@@ -37,17 +38,18 @@
   @media (max-width: 800px)
     margin-bottom: 40px
 
-.flow-tree
+.flow-tree-icon
   height: 221px
   width: 221px
-  background: url("../img/Flow_Tree-Icon.png") center no-repeat
-  background-size: cover
 
 .users-icon
   height: 197px
   width: 272px
-  background: url("../img/Users-Icon.png") center no-repeat
-  background-size: cover
+
+@each $icon in (flow-tree, users)
+  .#{$icon}-icon
+    background: url("../img/#{$icon}-icon.png") no-repeat center
+    background-size: cover
 
 .services-branding
   padding: 100px 0 0 0
@@ -55,8 +57,7 @@
 
 .skills-main-container
   padding-top: 66px
-  display: flex
-  justify-content: space-around
+  +flex-content(space-around)
   flex-wrap: wrap
   
 .skills-container
@@ -66,16 +67,28 @@
   @media (max-width: 660px)
     flex-basis: 100%
 
+.skills-item
+  width: calc(100% - 92px)
+
 .skills-img
   margin-right: 20px
+  width: 72px
+  height: 72px
+
+
+@each $skills in (Branding, WEB, Mobile, Animations, UI, Photography)
+  .#{$skills}-icon
+    background-image: url('../img/#{$skills}.png')
+    background-size: cover
 
 .skills-title
   font-size: 22px
   margin-bottom: 10px
 
 .skills-paragraph
+  color: $main-paragraph-color
   font-size: 18px
-  color: #777777
+
 
 
 

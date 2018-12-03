@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <title>Homework-8</title>
 </head>
@@ -13,56 +13,93 @@
     <header>
         <div class="wrapper">
             <div class="header-content">
-                <div class="header-logo">
-                    <i class="fas fa-paper-plane"></i>
-                    ESCAPE
-                </div>
-                <nav class="nav-container">
-                    <a href="#" class="nav-items">Home</a>
-                    <a href="#" class="nav-items">Service</a>
-                    <a href="#" class="nav-items">Clients</a>
-                    <a href="#" class="nav-items">Team</a>
-                    <a href="#" class="nav-items">Contact</a>
+                <a href="#">
+                    <div class="header-logo">
+                        <i class="fas fa-paper-plane"></i>
+                        ESCAPE
+                    </div>
+                </a>
+
+                <nav class="nav-container" id="site-navigation">
+
+                    <label for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+                    <input id="toggle-mobile-menu" type="checkbox" />
+
+                    <ul id="main-menu">
+                        <li>
+                            <a href="#home" class="nav-items">Home</a>
+                        </li>
+                        <li>
+                            <a href="#service" class="nav-items">Service</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="nav-items">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#team" class="nav-items">Team</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-items">Contact</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="wrapper">
-            <p class="home-paragraph">Can you build the website of my dreams?</p>
-            <h1 class="home-title">Yup, we can do that.</h1>
-            <button class="home-btn">Learn More</button>
+            <p class="home-paragraph">
+                Can you build the website of my dreams?
+            </p>
+            <h1 class="home-title">
+                Yup, we can do that.
+            </h1>
+            <button class="home-btn">
+                Learn More
+            </button>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="service">
         <div class="wrapper">
             <div class="services-container">
                 <div class="services-item">
-                    <h2 class="title">Web <span class="end-of-text">Development</span></h2>
-                    <p class="services-paragraph-1">Proin iaculis purus consequat sem cure digni ssim.
+                    <h2 class="title">
+                        Web <span class="end-of-text">Development</span>
+                    </h2>
+                    <p class="services-paragraph-1">
+                        Proin iaculis purus consequat sem cure digni ssim.
                         Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
                         Proin iaculis purus consequat sem cure digni ssim.
-                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                    <p class="service-paragraph-2">Iaculis purus consequat sem cure digni ssim.
                         Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                        Proin iaculis purus consequat sem cure digni ssim.</p>
+                    </p>
+                    <p class="service-paragraph-2">
+                        Iaculis purus consequat sem cure digni ssim.
+                        Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                        Proin iaculis purus consequat sem cure digni ssim.
+                    </p>
                 </div>
-                <div class="services-item flow-tree"></div>
+                <div class="services-item flow-tree-icon"></div>
             </div>
         </div>
         <div class="services-branding">
             <div class="wrapper">
                 <div class="services-container reverse">
                     <div class="services-item">
-                        <h2 class="title">Identy <span class="end-of-text">Branding</span></h2>
-                        <p class="services-paragraph-1">Proin iaculis purus consequat sem cure digni ssim.
+                        <h2 class="title">
+                            Identy <span class="end-of-text">Branding</span>
+                        </h2>
+                        <p class="services-paragraph-1">
+                            Proin iaculis purus consequat sem cure digni ssim.
                             Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
-                        <p class="service-paragraph-2">Iaculis purus consequat sem cure digni ssim.
+                            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.
+                        </p>
+                        <p class="service-paragraph-2">
+                            Iaculis purus consequat sem cure digni ssim.
                             Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
-                            Proin iaculis purus consequat.</p>
+                            Proin iaculis purus consequat.
+                        </p>
                     </div>
                     <div class="services-item users-icon"></div>
                 </div>
@@ -72,57 +109,81 @@
             <div class="wrapper">
                 <div class="skills-main-container">
                     <div class="skills-container">
-                        <div class="skills-img"><img src="img/Branding.png" alt=""></div>
+                        <div class="skills-img Branding-icon"></div>
                         <div class="skills-item">
-                            <h3 class="skills-title">Branding & Identity</h3>
-                            <p class="skills-paragraph">Proin iaculis purus consequat sem cure
+                            <h3 class="skills-title">
+                                Branding & Identity
+                            </h3>
+                            <p class="skills-paragraph">
+                                Proin iaculis purus consequat sem cure
                                 digni ssim. Donec porttitora entum suscipit
-                                aenean rhoncus posuere odio in tincidunt. </p>
+                                aenean rhoncus posuere odio in tincidunt.
+                            </p>
                             </div>
                         </div>
                     <div class="skills-container">
-                        <div class="skills-img"><img src="img/WEB.png" alt=""></div>
+                        <div class="skills-img WEB-icon"></div>
                         <div class="skills-item">
-                            <h3 class="skills-title">Web & Graphic Design</h3>
-                            <p class="skills-paragraph">Proin iaculis purus consequat sem cure
+                            <h3 class="skills-title">
+                                Web & Graphic Design
+                            </h3>
+                            <p class="skills-paragraph">
+                                Proin iaculis purus consequat sem cure
                                 digni ssim. Donec porttitora entum suscipit
-                                aenean rhoncus posuere odio in tincidunt. </p>
+                                aenean rhoncus posuere odio in tincidunt.
+                            </p>
                         </div>
                     </div>
                     <div class="skills-container">
-                        <div class="skills-img"><img src="img/Mobile.png" alt=""></div>
+                        <div class="skills-img Mobile-icon"></div>
                         <div class="skills-item">
-                            <h3 class="skills-title">Mobile App Development</h3>
-                            <p class="skills-paragraph">Proin iaculis purus consequat sem cure
+                            <h3 class="skills-title">
+                                Mobile App Development
+                            </h3>
+                            <p class="skills-paragraph">
+                                Proin iaculis purus consequat sem cure
                                 digni ssim. Donec porttitora entum suscipit
-                                aenean rhoncus posuere odio in tincidunt. </p>
+                                aenean rhoncus posuere odio in tincidunt.
+                            </p>
                         </div>
                     </div>
                     <div class="skills-container">
-                        <div class="skills-img"><img src="img/Animations.png" alt=""></div>
+                        <div class="skills-img Animations-icon"></div>
                         <div class="skills-item">
-                            <h3 class="skills-title">Animations</h3>
-                            <p class="skills-paragraph">Proin iaculis purus consequat sem cure
+                            <h3 class="skills-title">
+                                Animations
+                            </h3>
+                            <p class="skills-paragraph">
+                                Proin iaculis purus consequat sem cure
                                 digni ssim. Donec porttitora entum suscipit
-                                aenean rhoncus posuere odio in tincidunt. </p>
+                                aenean rhoncus posuere odio in tincidunt.
+                            </p>
                         </div>
                     </div>
                     <div class="skills-container">
-                        <div class="skills-img"><img src="img/UI.png" alt=""></div>
+                        <div class="skills-img UI-icon"></div>
                         <div class="skills-item">
-                            <h3 class="skills-title">UI/UX</h3>
-                            <p class="skills-paragraph">Proin iaculis purus consequat sem cure
+                            <h3 class="skills-title">
+                                UI/UX
+                            </h3>
+                            <p class="skills-paragraph">
+                                Proin iaculis purus consequat sem cure
                                 digni ssim. Donec porttitora entum suscipit
-                                aenean rhoncus posuere odio in tincidunt. </p>
+                                aenean rhoncus posuere odio in tincidunt.
+                            </p>
                         </div>
                     </div>
                     <div class="skills-container">
-                        <div class="skills-img"><img src="img/Photography.png" alt=""></div>
+                        <div class="skills-img Photography-icon"></div>
                         <div class="skills-item">
-                            <h3 class="skills-title">Photography</h3>
-                            <p class="skills-paragraph">Proin iaculis purus consequat sem cure
+                            <h3 class="skills-title">
+                                Photography
+                            </h3>
+                            <p class="skills-paragraph">
+                                Proin iaculis purus consequat sem cure
                                 digni ssim. Donec porttitora entum suscipit
-                                aenean rhoncus posuere odio in tincidunt. </p>
+                                aenean rhoncus posuere odio in tincidunt.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -130,47 +191,258 @@
         </div>
     </section>
 
-    <section class="clients">
+    <section class="clients" id="clients">
         <div class="wrapper">
-            <h2 class="title">Awesome <span class="end-of-text">Clients</span></h2>
-            <p class="under-title-paragraph">See what nice things our clients said about us. </p>
+            <h2 class="title">
+                Awesome <span class="end-of-text">Clients</span>
+            </h2>
+            <p class="under-title-paragraph">
+                See what nice things our clients said about us.
+            </p>
             <div class="clients-main-container">
                 <div class="clients-container">
                     <div class="clients-img"><img src="img/Clipping_Mask.png" alt=""></div>
-                    <div class="clients-item">
-                        <p class="cite">“ Proin iaculis purus consequat sem cure  digni ssim
-                            donec porttitora entum suscipit aenean rhoncus. ” </p>
-                        <p class="author">- Jamie Richardson, Founder of Cocoa Media</p>
+                    <div class="clients-item left">
+                        <p class="cite">
+                            “ Proin iaculis purus consequat sem cure  digni ssim
+                            donec porttitora entum suscipit aenean rhoncus. ”
+                        </p>
+                        <p class="author">
+                            - Jamie Richardson, Founder of Cocoa Media
+                        </p>
                     </div>
                 </div>
 
                 <div class="clients-container reverse">
                     <div class="clients-img"><img src="img/Clipping_Mask.png" alt=""></div>
-                    <div class="clients-item">
-                        <p class="cite">“ Proin iaculis purus consequat sem cure  digni ssim
-                            donec porttitora entum suscipit aenean rhoncus. ” </p>
-                        <p class="author">- Bart Thompson, Founder of Rainel</p>
+                    <div class="clients-item right">
+                        <p class="cite">
+                            “ Proin iaculis purus consequat sem cure  digni ssim
+                            donec porttitora entum suscipit aenean rhoncus. ”
+                        </p>
+                        <p class="author">
+                            - Bart Thompson, Founder of Rainel
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="logos">
+    <section class="logos" id>
         <div class="wrapper">
             <div class="logos-container">
-                <div class="logos-item"><img src="img/Envato.png" alt=""class="logos-img"></div>
-                <div class="logos-item"><img src="img/WordPress.png" alt=""class="logos-img"></div>
-                <div class="logos-item"><img src="img/Tuts+.png" alt=""class="logos-img"></div>
-                <div class="logos-item"><img src="img/Microlancer_copy.png" alt="" class="logos-img"></div>
+                <a href="#">
+                    <div class="logos-item">
+                        <img src="img/Envato.png" alt="" class="logos-img">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="logos-item">
+                        <img src="img/WordPress.png" alt="" class="logos-img">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="logos-item">
+                        <img src="img/Tuts+.png" alt="" class="logos-img">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="logos-item">
+                        <img src="img/Microlancer_copy.png" alt="" class="logos-img">
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <div class="wrapper">
-            <h2 class="team-title">Amazing<span class="end-of-text">Team</span></h2>
+            <h2 class="team-title">
+                Amazing <span class="end-of-text">Team</span>
+            </h2>
             <p class="under-title-paragraph">These wonderful people make work enjoyable.</p>
+            <div class="team-main-container">
+                <div class="team-container">
+                    <div><img src="img/team-photo.png" alt=""></div>
+
+                    <h3 class="name">
+                        Kimberly Thompson
+                    </h3>
+                    <p class="role">
+                        Marketer
+                    </p>
+
+                    <div class="social-network-container">
+                        <a href="#">
+                            <div class="social-network-item">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-network-item facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-network-item">
+                                <i class="fab fa-pinterest-p"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-container">
+
+                    <div><img src="img/team-photo.png" alt=""></div>
+                    <h3 class="name">
+                        Rico Massimo
+                    </h3>
+                    <p class="role">
+                        Coder
+                    </p>
+
+                    <div class="social-network-container">
+                        <a href="#">
+                            <div class="social-network-item">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-network-item facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-network-item">
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-container">
+
+                    <div><img src="img/team-photo.png" alt=""></div>
+                    <h3 class="name">
+                        Uku Mason
+                    </h3>
+                    <p class="role">
+                        Graphic Designer
+                    </p>
+
+                    <div class="social-network-container">
+                        <a href="#">
+                            <div class="social-network-item facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="social-network-item">
+                                <i class="fab fa-pinterest-p"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="under-team-paragraph">
+                Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
+                aenean rhoncus posuere odio in tincidunt proin iaculis.
+            </p>
         </div>
     </section>
+
+    <footer id="contact">
+        <div class="wrapper">
+            <div class="form-container">
+                <div class="form-item">
+                    <h2 class="form-title">
+                        Say <span class="end-of-text">Hello</span>
+                    </h2>
+                    <p class="form-paragraph">
+                        Don’t be shy, drop us an email and say hello! We are a really nice
+                        bunch of people :)
+                    </p>
+
+                    <div class="form-item-contacts">
+                        <div class="contacts-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <p class="contact-info">
+                                (416) 555-0000
+                            </p>
+                        </div>
+
+                        <div class="contacts-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p class="contact-info">
+                                hello@escape.com
+                            </p>
+                        </div>
+
+                        <div class="contacts-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <p class="contact-info">
+                                @escape
+                            </p>
+                        </div>
+
+                        <div class="contacts-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <p class="contact-info">
+                                facebook.com/escape
+                            </p>
+                        </div>
+
+                        <div class="contacts-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                            <p class="contact-info">
+                                plus.com/escape
+                            </p>
+                        </div>
+
+                        <div class="contacts-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-pinterest-p"></i>
+                            </div>
+                            <p class="contact-info">
+                                pinterest.com/escape
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-item">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name *" aria-label="Your Name"
+                               class="form-input">
+                        <input type="email" name="Email" placeholder="Your Email *" aria-label="Your Email"
+                               class="form-input">
+                        <textarea name="Message" class="form-textarea" placeholder="Your Message*"
+                                  aria-label="Your Message"></textarea>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p class="info-paragraph">
+                    © 2014 Escape by FreebiesXpress • Made In Toronto
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>

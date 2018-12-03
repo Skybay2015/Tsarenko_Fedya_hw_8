@@ -1,0 +1,54 @@
+@import "variables"
+
+.team
+  padding: 100px 0
+  text-align: center
+  background-color: #111111
+  
+.team-title
+  color: $secondary-title-color
+  font-size: 60px
+
+.team-main-container
+  +flex-content(space-around)
+  flex-wrap: wrap
+
+
+.name
+  margin-top: 26px
+  color: #fff
+  font-size: 18px
+  font-weight: bold
+
+.role
+  margin-top: 13px
+  color: #fff
+  font-size: 16px
+
+.team-container
+  margin-top: 80px
+  @media (max-width: 768px)
+    flex-basis: 100%
+
+.social-network-container
+  +flex-content(space-around)
+  margin-top: 11px
+
+.social-network-item
+  padding: 12px
+  color: #fff
+  border: 3px solid #fff
+  border-radius: 50%
+  &:hover
+    color: #000
+    background-color: #fff
+    transition: 0.3s ease
+
+.facebook
+  padding: 12px 15px
+  
+.under-team-paragraph
+  margin: 49px auto 0
+  max-width: 70%
+  font-size: 20px
+  color: #ebebeb

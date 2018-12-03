@@ -1,0 +1,98 @@
+@import "variables"
+
+footer
+  padding: 100px 0 31px
+  background-color: #7690c5
+
+.form-container
+  +flex-content(space-between)
+  flex-wrap: wrap
+  margin-bottom: 100px
+
+.form-title
+  margin-bottom: 17px
+  color: $secondary-title-color
+  font-size: 60px
+  @media  (max-width: 930px)
+    text-align: center
+
+.form-paragraph
+  margin-bottom: 50px
+  color: $secondary-paragraph-color
+  font-size: 18px
+  @media  (max-width: 930px)
+    text-align: center
+
+.form-item
+  flex-basis: 50%
+  @media (max-width: 930px)
+    flex-basis: 100%
+
+.form-item-contacts
+  +flex-content(space-between)
+  flex-wrap: wrap
+  align-items: stretch
+  @media (max-width: 930px)
+    justify-content: center
+
+.contacts-item
+  display: flex
+  flex-basis: 50%
+  margin: 0 0 50px 0
+  @media (max-width: 930px)
+    justify-content: center
+
+.contact-icon,.contact-info
+  color: $secondary-paragraph-color
+  font-size: 18px
+
+.contact-icon
+  margin-right: 20px
+
+form
+  display: flex
+  flex-direction: column
+
+textarea,.form-input::-webkit-input-placeholder
+  font-size: 18px
+
+textarea
+  resize: none
+  padding: 17px 20px 124px 20px
+  max-width: 428px
+  width: 100%
+  font-size: 18px
+  @media (max-width: 930px)
+    margin: 0 auto
+  @media (max-width: 490px)
+    margin: 0
+    width: auto
+
+.form-input
+  padding: 20px
+  margin-bottom: 25px
+  max-width: 426px
+  width: 100%
+  font-size: 18px
+  @media (max-width: 930px)
+    margin: 0 auto 20px
+
+  @media (max-width: 490px)
+    margin: 0 0 25px
+    width: auto
+
+
+.footer-info::before
+  content: ''
+  display: block
+  margin-bottom: 32px
+  height: 1px
+  max-width: 100%
+  background-color: #87a0d2
+
+.info-paragraph
+  text-align: center
+  color: $secondary-paragraph-color
+  font-size: 16px
+
+

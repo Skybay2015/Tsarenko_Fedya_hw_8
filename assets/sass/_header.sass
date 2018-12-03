@@ -1,43 +1,107 @@
 @import "variables"
 
+@import "mixins"
+
+body
+  font-family: $main-font
+
 header
   position: absolute
   left: 0
   right: 0
   padding: 50px 0 0 0
 
-
 .header-content
-  display: flex
-  justify-content: space-between
-  align-items: center
+  +flex-content(space-between)
   flex-wrap: wrap
 
 .header-logo
   color: #fff
   font-size: 25px
-  @media (max-width: 491px)
-    margin: 0 auto 20px
-
 .nav-container
-  display: flex
-  justify-content: space-between
-  @media (max-width: 491px)
-    margin: 0 auto
+  +flex-content(space-between)
+
+a
+  text-decoration: none
 
 .nav-items
   margin-right: 30px
   color: #fff
-  text-decoration: none
-  @media (max-width: 360px)
-    margin-right: 20px
   &:last-child
     margin-right: 0
+  &:hover::after
+    content: ''
+    display: block
+    height: 1px
+    background: #fff
+    @media (max-width: 769px)
+      display: none
 
+
+header
+  .wrapper
+    @media (max-width: 769px)
+      padding: 0
+      
 .wrapper
   box-sizing: border-box
   padding: 0 15px
   margin: 0 auto
   max-width: 970px
 
+#site-navigation
+  display: block
+  background: transparent
 
+#site-navigation #main-menu,
+#site-navigation > input
+  display: none
+
+#site-navigation > label
+  display: block
+  font-size: 36px
+  color: #fff
+  position: absolute
+  right: 20px
+  width: 36px
+  padding: 0
+  cursor: pointer
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+#site-navigation > input:checked + #main-menu
+  display: block
+  clear: both
+  top: 36px
+  position: relative
+  background: #525254
+  color: #fff
+
+#site-navigation ul li
+  display: block
+  padding: 12px 10px
+
+#site-navigation a
+  text-decoration: none
+  color: #fff
+
+@media only screen and (min-device-width: 769px)
+  #site-navigation
+    height: auto
+  #site-navigation #main-menu
+    display: block
+  #site-navigation > label
+    display: none
+  #site-navigation ul li
+    display: inline-block
+
+@media only screen and (max-device-width: 769px)
+  #site-navigation
+    position: relative
+    top: -31px
+    max-width: 768px
+    width: 100%
